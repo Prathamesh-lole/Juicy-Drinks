@@ -1,0 +1,989 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #2a2a2a;
+    color: white;
+}
+
+.main-container {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #6b8e3d;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #6b8e3d;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.cart-icon {
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    height: 530px;
+    position: relative;
+    border: 2px solid black;
+}
+
+.hero-left {
+    flex: 1;
+    width: 50%;
+    position: relative;
+}
+
+.tropical-scene-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.hero-right {
+    flex: 1;
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-right-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero-text-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+}
+
+
+
+.text-section {
+    background: rgba(107, 142, 61, 0.8);
+    padding: 40px 35px;
+    border-radius: 20px;
+    border: 2px solid black;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.text-section:hover {
+    transform: scale(1.1);
+}
+
+.text-section h1 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: white;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.explore-btn {
+    background-color: #6b8e3d;
+    color: white;
+    border: 1px solid black;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 2px 2px black;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #5a7a33;
+    transform: translateY(-2px);
+    box-shadow: 3px 3px black;
+}
+
+
+
+/* Our Offerings */
+.offerings-section {
+    padding: 30px 20px;
+    border: 1px solid black;
+}
+
+.offerings-section h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.offerings-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.offering-card {
+    background-color: rgba(255, 255, 255, 0.218);
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid black;
+
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.offering-card:hover {
+    transform: scale(1.05);
+}
+
+.card-image {
+    width: 100%;
+    height: 240px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+
+
+.offering-card p {
+    font-size: 12px;
+    color: white;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.load-more-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    text-align: center;
+    width: fit-content;
+    transition: all 0.3s ease;
+}
+
+.load-more-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1) translateY(-2px);
+}
+
+/* Story Section */
+.story-section {
+    display: flex;
+    padding: 10px 20px;
+    gap: 20px;
+    border: 1px solid black;
+}
+
+.story-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.story-left h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.story-left p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    color: white;
+    opacity: 0.9;
+}
+
+.learn-more-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 6px 15px;
+    border-radius: 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.story-right {
+    flex: 1;
+    background: linear-gradient(135deg, #8a2be2 0%, #9370db 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    padding: 0;
+}
+
+.person-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Creations Section */
+.creations-section {
+    display: flex;
+    padding: 30px 20px;
+    gap: 20px;
+    border: 1px solid black;
+}
+
+.creations-left {
+    flex: 1;
+    border-right: 1px solid rgb(255, 255, 255);
+    padding-right: 20px;
+}
+
+.creations-left h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.creations-left p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: white;
+    opacity: 0.9;
+}
+
+.creations-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 20px;
+}
+
+.creation-item h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.creation-item p {
+    font-size: 13px;
+    line-height: 1.3;
+    color: white;
+    opacity: 0.8;
+}
+
+/* Footer */
+.footer {
+    padding: 30px 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer p {
+    font-size: 10px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    color: white;
+    opacity: 0.8;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.copyright {
+    font-size: 8px;
+    opacity: 0.6;
+    margin-bottom: 0 !important;
+}
+
+
+/* Mobile First - Base styles (up to 480px) */
+@media (max-width: 480px) {
+    .main-container {
+        max-width: 100%;
+    }
+    
+    .header {
+        padding: 12px 15px;
+    }
+    
+    .logo {
+        font-size: 20px;
+    }
+    
+    .nav {
+        gap: 15px;
+    }
+    
+    .nav-link {
+        font-size: 12px;
+    }
+    
+    .hero-section {
+        height: 390px;
+    }
+    
+    .hero-right {
+        padding: 15px;
+    }
+    
+    .text-section h1 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .explore-btn {
+        padding: 6px 15px;
+        font-size: 12px;
+    }
+
+    
+    .offerings-section {
+        padding: 20px 15px;
+    }
+    
+    .offerings-section h2 {
+        font-size: 16px;
+    }
+    
+    .offerings-grid {
+        gap: 10px;
+    }
+    
+    .offering-card {
+        padding: 12px;
+    }
+    
+    .card-image {
+        height: 220px;
+    }
+    
+    .story-section {
+        flex-direction: column;
+        padding: 0px 15px;
+        gap: 15px;
+    }
+    
+    .story-left h2 {
+        font-size: 14px;
+    }
+    
+    .story-left p {
+        font-size: 10px;
+    }
+    
+    .creations-section {
+        flex-direction: column;
+        padding: 20px 15px;
+        gap: 15px;
+    }
+    
+    .creations-left h2 {
+        font-size: 14px;
+    }
+    
+    .footer {
+        padding: 20px 15px;
+    }
+}
+
+/* Small Mobile (481px - 600px) */
+@media (min-width: 481px) and (max-width: 600px) {
+    .main-container {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .hero-section {
+        height: 390px;
+    }
+    
+    .text-section h1 {
+        font-size: 18px;
+    }
+    
+    .offerings-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    
+    .card-image {
+        height: 230px;
+    }
+}
+
+/* Tablet Portrait (601px - 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .main-container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .header {
+        padding: 18px 25px;
+    }
+    
+    .logo {
+        font-size: 28px;
+    }
+    
+    .nav {
+        gap: 25px;
+    }
+    
+    .nav-link {
+        font-size: 16px;
+    }
+    
+    .hero-section {
+        height: 440px;
+    }
+    
+    .hero-right {
+        padding: 25px;
+    }
+    
+    .text-section h1 {
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+    
+    .explore-btn {
+        padding: 10px 25px;
+        font-size: 16px;
+    }
+
+    
+    .offerings-section {
+        padding: 40px 25px;
+    }
+    
+    .offerings-section h2 {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+    
+    .offerings-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+        margin-bottom: 45px;
+    }
+    
+    .offering-card {
+        padding: 18px;
+    }
+    
+    .card-image {
+        height: 260px;
+        margin-bottom: 12px;
+    }
+    
+    .offering-card p {
+        font-size: 14px;
+    }
+    
+    .load-more-btn {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    
+    .story-section {
+        padding: 20px 25px;
+        gap: 25px;
+    }
+    
+    .story-left h2 {
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+    
+    .story-left p {
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 18px;
+    }
+    
+    .learn-more-btn {
+        padding: 8px 18px;
+        font-size: 13px;
+    }
+    
+    .person-image {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .creations-section {
+        padding: 40px 25px;
+        gap: 25px;
+    }
+    
+    .creations-left h2 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    
+    .creations-left p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    
+    .creation-item {
+        margin-bottom: 18px;
+    }
+    
+    .creation-item h3 {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+    
+    .creation-item p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+    
+    .footer {
+        padding: 40px 25px;
+    }
+    
+    .footer h2 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    
+    .footer p {
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 18px;
+    }
+    
+    .social-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+    
+    .copyright {
+        font-size: 10px;
+    }
+}
+
+/* Tablet Landscape (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .main-container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    .header {
+        padding: 20px 30px;
+    }
+    
+    .logo {
+        font-size: 32px;
+    }
+    
+    .nav {
+        gap: 30px;
+    }
+    
+    .nav-link {
+        font-size: 18px;
+    }
+    
+    .hero-section {
+        height: 490px;
+    }
+    
+    .hero-right {
+        padding: 30px;
+    }
+    
+    .text-section h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .explore-btn {
+        padding: 12px 30px;
+        font-size: 18px;
+    }
+
+    
+    .offerings-section {
+        padding: 50px 30px;
+    }
+    
+    .offerings-section h2 {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+    
+    .offerings-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .offering-card {
+        padding: 20px;
+    }
+    
+    .card-image {
+        height: 280px;
+        margin-bottom: 15px;
+    }
+    
+    .offering-card p {
+        font-size: 16px;
+    }
+    
+    .load-more-btn {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+    
+    .story-section {
+        padding: 30px 30px;
+        gap: 30px;
+    }
+    
+    .story-left h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .story-left p {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    
+    .learn-more-btn {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    
+    .person-image {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .creations-section {
+        padding: 50px 30px;
+        gap: 30px;
+    }
+    
+    .creations-left h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    
+    .creations-left p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    
+    .creation-item {
+        margin-bottom: 20px;
+    }
+    
+    .creation-item h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    
+    .creation-item p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    
+    .footer {
+        padding: 50px 30px;
+    }
+    
+    .footer h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    
+    .footer p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+    
+    .copyright {
+        font-size: 12px;
+    }
+}
+
+/* Desktop (1025px and up) */
+@media (min-width: 1025px) {
+    .main-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .header {
+        padding: 25px 40px;
+    }
+    
+    .logo {
+        font-size: 36px;
+    }
+    
+    .nav {
+        gap: 40px;
+    }
+    
+    .nav-link {
+        font-size: 20px;
+    }
+    
+    .hero-section {
+        height: 540px;
+    }
+    
+    .hero-right {
+        padding: 40px;
+    }
+    
+    .text-section h1 {
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+    
+    .explore-btn {
+        padding: 15px 35px;
+        font-size: 20px;
+    }
+
+    
+    .offerings-section {
+        padding: 60px 40px;
+    }
+    
+    .offerings-section h2 {
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+    
+    .offerings-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+        margin-bottom: 55px;
+    }
+    
+    .offering-card {
+        padding: 25px;
+    }
+    
+    .card-image {
+        height: 300px;
+        margin-bottom: 18px;
+    }
+    
+    .offering-card p {
+        font-size: 18px;
+    }
+    
+    .load-more-btn {
+        padding: 15px 35px;
+        font-size: 18px;
+    }
+    
+    .story-section {
+        padding: 40px 40px;
+        gap: 40px;
+    }
+    
+    .story-left h2 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+    
+    .story-left p {
+        font-size: 17px;
+        line-height: 1.7;
+        margin-bottom: 25px;
+    }
+    
+    .learn-more-btn {
+        padding: 12px 25px;
+        font-size: 17px;
+    }
+    
+    .person-image {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .creations-section {
+        padding: 60px 40px;
+        gap: 40px;
+    }
+    
+    .creations-left h2 {
+        font-size: 28px;
+        margin-bottom: 18px;
+    }
+    
+    .creations-left p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+    
+    .creation-item {
+        margin-bottom: 25px;
+    }
+    
+    .creation-item h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .creation-item p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    
+    .footer {
+        padding: 60px 40px;
+    }
+    
+    .footer h2 {
+        font-size: 28px;
+        margin-bottom: 18px;
+    }
+    
+    .footer p {
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 25px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+    }
+    
+    .social-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+    
+    .copyright {
+        font-size: 14px;
+    }
+}
+
+/* Large Desktop (1440px and up) */
+@media (min-width: 1440px) {
+    .main-container {
+        max-width: 1400px;
+    }
+    
+    .hero-section {
+        height: 570px;
+    }
+    
+    .text-section h1 {
+        font-size: 36px;
+    }
+    
+    .offerings-section h2,
+    .story-left h2,
+    .creations-left h2,
+    .footer h2 {
+        font-size: 32px;
+    }
+}
