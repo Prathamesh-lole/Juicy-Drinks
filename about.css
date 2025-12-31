@@ -1,0 +1,488 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #2a2a2a;
+    color: white;
+}
+
+.main-container {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #6b8e3d;
+    min-height: 100vh;
+}
+
+/* header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #6b8e3d;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.back-arrow {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.back-arrow:hover {
+    transform: scale(1.2);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #f0f0f0;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.cart-icon {
+    font-size: 16px;
+}
+
+/* About Section */
+.about-hero {
+    display: flex;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+    background: rgba(107, 142, 61, 0.9);
+    padding: 40px 50px;
+    border-radius: 20px;
+    border: 2px solid black;
+    backdrop-filter: blur(10px);
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: white;
+    opacity: 0.9;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Story Section */
+.story-section {
+    padding: 60px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.story-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.story-text {
+    flex: 2;
+}
+
+.story-text h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.story-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    color: white;
+    opacity: 0.9;
+}
+
+.story-image {
+    flex: 1;
+}
+
+.story-img {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Values Section */
+.values-section {
+    padding: 60px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.values-section h2 {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.value-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.value-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.value-card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.value-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: white;
+    opacity: 0.8;
+}
+
+/* Team Section */
+.team-section {
+    padding: 60px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.team-section h2 {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.team-member {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    text-decoration: none;
+    color: inherit;
+}
+
+.member-image {
+    margin-bottom: 20px;
+}
+
+.member-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.team-member h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.member-role {
+    font-size: 14px;
+    color: #f0f0f0;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.member-bio {
+    font-size: 13px;
+    line-height: 1.5;
+    color: white;
+    opacity: 0.8;
+}
+
+/* Mission Section */
+.mission-section {
+    padding: 60px 40px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mission-content h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.mission-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    color: white;
+    opacity: 0.9;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.mission-stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-size: 16px;
+    color: white;
+    opacity: 0.8;
+}
+
+/* Footer */
+.footer {
+    padding: 40px 40px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: white;
+    opacity: 0.8;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.copyright {
+    font-size: 12px;
+    opacity: 0.6;
+    margin-bottom: 0 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        padding: 12px 15px;
+    }
+    
+    .logo {
+        font-size: 20px;
+    }
+    
+    .nav {
+        gap: 15px;
+    }
+    
+    .nav-link {
+        font-size: 12px;
+    }
+    
+    .about-hero {
+        height: 300px;
+    }
+    
+    .hero-content {
+        padding: 30px 25px;
+    }
+    
+    .hero-content h1 {
+        font-size: 32px;
+    }
+    
+    .hero-content p {
+        font-size: 16px;
+    }
+    
+    .story-section,
+    .values-section,
+    .team-section,
+    .mission-section {
+        padding: 40px 20px;
+    }
+    
+    .story-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    .story-text h2,
+    .values-section h2,
+    .team-section h2,
+    .mission-content h2 {
+        font-size: 28px;
+    }
+    
+    .values-grid,
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .mission-stats {
+        gap: 30px;
+    }
+    
+    .stat h3 {
+        font-size: 36px;
+    }
+    
+    .footer {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 24px;
+    }
+    
+    .hero-content p {
+        font-size: 14px;
+    }
+    
+    .story-text h2,
+    .values-section h2,
+    .team-section h2,
+    .mission-content h2 {
+        font-size: 24px;
+    }
+    
+    .mission-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

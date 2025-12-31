@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #2a2a2a;
+    color: white;
+}
+
+.main-container {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #6b8e3d;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #6b8e3d;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.back-arrow {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.back-arrow:hover {
+    transform: scale(1.2);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f0f0f0;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.cart-icon {
+    font-size: 16px;
+}
+
+/* Profile Hero Section */
+.profile-hero {
+    display: flex;
+    align-items: center;
+    padding: 60px 40px;
+    gap: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.profile-image {
+    flex-shrink: 0;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.role {
+    font-size: 24px;
+    color: #f0f0f0;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.tagline {
+    font-size: 18px;
+    color: white;
+    opacity: 0.8;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+/* Biography Section */
+.biography-section {
+    padding: 60px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bio-content h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.bio-content p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: white;
+    opacity: 0.9;
+}
+
+/* Achievements Section */
+.achievements-section {
+    padding: 60px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.achievements-section h2 {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.achievement-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.achievement-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.achievement-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.achievement-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: white;
+    opacity: 0.8;
+}
+
+/* Vision Section */
+.vision-section {
+    padding: 60px 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.vision-content h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+}
+
+.vision-content blockquote {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    border-left: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.vision-content p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: white;
+    opacity: 0.9;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Impact Section */
+.impact-section {
+    padding: 60px 40px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.impact-section h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.impact-stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+    min-width: 150px;
+}
+
+.stat-item h3 {
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.stat-item p {
+    font-size: 16px;
+    color: white;
+    opacity: 0.8;
+    line-height: 1.4;
+}
+
+/* Footer */
+.footer {
+    padding: 40px 40px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: white;
+    opacity: 0.8;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.copyright {
+    font-size: 12px;
+    opacity: 0.6;
+    margin-bottom: 0 !important;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        padding: 12px 15px;
+    }
+    
+    .logo {
+        font-size: 20px;
+    }
+    
+    .nav {
+        gap: 15px;
+    }
+    
+    .nav-link {
+        font-size: 12px;
+    }
+    
+    .profile-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        gap: 25px;
+    }
+    
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .profile-info h1 {
+        font-size: 32px;
+    }
+    
+    .role {
+        font-size: 20px;
+    }
+    
+    .tagline {
+        font-size: 16px;
+    }
+    
+    .biography-section,
+    .achievements-section,
+    .vision-section,
+    .impact-section {
+        padding: 40px 20px;
+    }
+    
+    .bio-content h2,
+    .achievements-section h2,
+    .vision-content h2,
+    .impact-section h2 {
+        font-size: 28px;
+    }
+    
+    .achievements-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .vision-content blockquote {
+        font-size: 18px;
+        padding: 20px;
+    }
+    
+    .impact-stats {
+        gap: 30px;
+        flex-direction: column;
+    }
+    
+    .stat-item h3 {
+        font-size: 36px;
+    }
+    
+    .footer {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-info h1 {
+        font-size: 28px;
+    }
+    
+    .role {
+        font-size: 18px;
+    }
+    
+    .tagline {
+        font-size: 14px;
+    }
+    
+    .bio-content h2,
+    .achievements-section h2,
+    .vision-content h2,
+    .impact-section h2 {
+        font-size: 24px;
+    }
+    
+    .vision-content blockquote {
+        font-size: 16px;
+    }
+    
+    .stat-item h3 {
+        font-size: 32px;
+    }
+}
