@@ -6,7 +6,7 @@ Juicy Drinks is a simple and responsive website designed to showcase refreshing 
 
 ## 🚀 Live Demo
 
-👉 https://prathamesh-lole.github.io/Juicy-Drinks
+https://prathamesh-lole.github.io/Juicy-Drinks/
 
 
 ## 📌 Project Overview
