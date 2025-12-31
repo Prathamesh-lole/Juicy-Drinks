@@ -8,6 +8,8 @@ body {
     font-family: 'Georgia', serif;
     background-color: #2a2a2a;
     color: white;
+    /* overflow-x: hidden; */
+    /* width: 100vw; */
 }
 
 .main-container {
@@ -15,6 +17,8 @@ body {
     margin: 0 auto;
     background-color: #6b8e3d;
     min-height: 100vh;
+    /* position: relative; */
+    /* z-index: 1; */
 }
 
 /* header */
@@ -24,6 +28,10 @@ body {
     align-items: center;
     padding: 15px 20px;
     background-color: #6b8e3d;
+    /* width: 100%; */
+    /* position: sticky; */
+    /* top: 0; */
+    /* z-index: 100; */
 }
 
 .header-left {
@@ -62,12 +70,15 @@ body {
     font-size: 14px;
     font-weight: 400;
     transition: color 0.3s ease;
+    /* cursor: pointer; */
+    /* display: inline-block; */
 }
 
 .nav-link:hover,
 .nav-link.active {
     color: #f0f0f0;
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    /* transform: scale(1.05); */
 }
 
 .cart-icon {
@@ -191,11 +202,14 @@ body {
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: transform 0.3s ease, background 0.3s ease;
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
+    /* position: relative; */
 }
 
 .value-card:hover {
     transform: translateY(-5px);
     background: rgba(255, 255, 255, 0.15);
+    /* box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); */
 }
 
 .value-icon {

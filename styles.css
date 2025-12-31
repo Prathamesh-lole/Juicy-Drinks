@@ -8,6 +8,8 @@ body {
     font-family: 'Georgia', serif;
     background-color: #2a2a2a;
     color: white;
+    /* overflow-x: hidden; */
+    /* width: 100%; */
 }
 
 .main-container {
@@ -15,6 +17,7 @@ body {
     margin: 0 auto;
     background-color: #6b8e3d;
     min-height: 100vh;
+    /* position: relative; */
 }
 
 /* Header */
@@ -179,10 +182,13 @@ body {
 
     transition: transform 0.3s ease;
     cursor: pointer;
+    /* overflow: hidden; */
+    /* position: relative; */
 }
 
 .offering-card:hover {
     transform: scale(1.05);
+    /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); */
 }
 
 .card-image {

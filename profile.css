@@ -8,6 +8,8 @@ body {
     font-family: 'Georgia', serif;
     background-color: #2a2a2a;
     color: white;
+    /* line-height: 1.6; */
+    /* font-size: 16px; */
 }
 
 .main-container {
@@ -15,6 +17,8 @@ body {
     margin: 0 auto;
     background-color: #6b8e3d;
     min-height: 100vh;
+    /* overflow-x: hidden; */
+    /* position: relative; */
 }
 
 /* Header */
@@ -169,11 +173,14 @@ body {
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: transform 0.3s ease, background 0.3s ease;
+    /* cursor: pointer; */
+    /* overflow: hidden; */
 }
 
 .achievement-card:hover {
     transform: translateY(-5px);
     background: rgba(255, 255, 255, 0.15);
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); */
 }
 
 .achievement-icon {
