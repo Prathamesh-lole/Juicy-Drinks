@@ -88,6 +88,7 @@ body {
     height: 530px;
     position: relative;
     border: 2px solid black;
+    /* Ensure proper positioning context */
 }
 
 .hero-left {
@@ -131,6 +132,11 @@ body {
     transform: translate(-50%, -50%);
     z-index: 10;
     text-align: center;
+    width: auto;
+    /* Ensure it's centered across the entire hero section */
+    /* Force center positioning */
+    margin-left: 0;
+    margin-right: 0;
 }
 
 
