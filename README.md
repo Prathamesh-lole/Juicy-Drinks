@@ -4,13 +4,23 @@ Juicy Drinks is a simple and responsive website designed to showcase refreshing 
 
 ---
 
-## ⚖️ Copyright & License
+## ⚖️ License
 
-**© 2024 Prathamesh Lole. All Rights Reserved.**
+**© 2024 Prathamesh Lole**
 
-This project is protected by copyright law. Unauthorized copying, distribution, or use of this code is strictly prohibited. See [LICENSE](LICENSE) for detailed terms and conditions.
+This project is licensed under the [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/).
 
-**For permissions or inquiries, please contact the author.**
+**You are free to:**
+- 👀 View and study the code for learning purposes
+- 📚 Use as educational reference
+- 🔄 Share and redistribute with proper attribution
+- 🛠️ Modify and adapt for non-commercial purposes
+
+**You cannot:**
+- 💰 Use for commercial purposes without permission
+- 🏢 Sell or monetize this work
+
+For commercial use permissions, please contact the author.
 
 ---
 
