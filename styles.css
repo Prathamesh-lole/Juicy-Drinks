@@ -82,6 +82,25 @@ body {
     /* transition: transform 0.3s ease; */
 }
 
+.user-icon {
+    font-size: 16px;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    /* padding: 8px; */
+    /* border-radius: 50%; */
+    /* margin-right: 10px; */
+}
+
+.user-icon i {
+    font-size: 16px;
+    /* color: #fff; */
+    /* transition: transform 0.3s ease; */
+}
+
+.user-icon:hover i,
+.cart-icon:hover i {
+    transform: scale(1.1);
+}
+
 /* Hero Section */
 .hero-section {
     display: flex;

@@ -89,6 +89,19 @@ body {
     font-size: 16px;
 }
 
+.user-icon {
+    font-size: 16px;
+}
+
+.user-icon i {
+    font-size: 16px;
+}
+
+.user-icon:hover i,
+.cart-icon:hover i {
+    transform: scale(1.1);
+}
+
 /* About Section */
 .about-hero {
     display: flex;
